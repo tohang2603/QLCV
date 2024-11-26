@@ -17,6 +17,7 @@ namespace QLCONGVAN
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmTrangChu());
+            // Tố Hằng 1 Vừa thêm đoạn này
         }
     }
 }
