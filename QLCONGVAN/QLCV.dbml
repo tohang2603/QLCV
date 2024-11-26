@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLCV" Class="QLCVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-FVDC2KI;Initial Catalog=QLCV;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="QLCONGVAN.Properties.Settings" SettingsPropertyName="QLCVConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CONGVAN" Member="CONGVANs">
+    <Type Name="CONGVAN">
+      <Column Name="maCV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maCQ" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="maPB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="maND" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maLoaiCV" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="soCongVan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tieuDe" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="trichNoiDung" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ngayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ngayCapNhat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nguoiTao" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="nguoiXuLy" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="nguoiPheDuyet" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="mucDoKhanCap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="noiNhan" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="tepDinhKem" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="COQUAN_CONGVAN" Member="COQUAN" ThisKey="maCQ" OtherKey="maCQ" Type="COQUAN" IsForeignKey="true" />
+      <Association Name="LOAICONGVAN_CONGVAN" Member="LOAICONGVAN" ThisKey="maLoaiCV" OtherKey="maLoaiCV" Type="LOAICONGVAN" IsForeignKey="true" />
+      <Association Name="NGUOIDUNG_CONGVAN" Member="NGUOIDUNG" ThisKey="maND" OtherKey="maND" Type="NGUOIDUNG" IsForeignKey="true" />
+      <Association Name="PHONGBAN_CONGVAN" Member="PHONGBAN" ThisKey="maPB" OtherKey="maPB" Type="PHONGBAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.COQUAN" Member="COQUANs">
+    <Type Name="COQUAN">
+      <Column Name="maCQ" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenCQ" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="COQUAN_CONGVAN" Member="CONGVANs" ThisKey="maCQ" OtherKey="maCQ" Type="CONGVAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DANGNHAP" Member="DANGNHAPs">
+    <Type Name="DANGNHAP">
+      <Column Name="tenDangNhap" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matKhau" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="DANGNHAP_NGUOIDUNG" Member="NGUOIDUNGs" ThisKey="tenDangNhap" OtherKey="tenDangNhap" Type="NGUOIDUNG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAICONGVAN" Member="LOAICONGVANs">
+    <Type Name="LOAICONGVAN">
+      <Column Name="maLoaiCV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenLoai" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="moTa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="LOAICONGVAN_CONGVAN" Member="CONGVANs" ThisKey="maLoaiCV" OtherKey="maLoaiCV" Type="CONGVAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIDUNG" Member="NGUOIDUNGs">
+    <Type Name="NGUOIDUNG">
+      <Column Name="maND" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maQuyen" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ngaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ngayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="tenDangNhap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="NGUOIDUNG_CONGVAN" Member="CONGVANs" ThisKey="maND" OtherKey="maND" Type="CONGVAN" />
+      <Association Name="DANGNHAP_NGUOIDUNG" Member="DANGNHAP" ThisKey="tenDangNhap" OtherKey="tenDangNhap" Type="DANGNHAP" IsForeignKey="true" />
+      <Association Name="PHANQUYEN_NGUOIDUNG" Member="PHANQUYEN" ThisKey="maQuyen" OtherKey="maQuyen" Type="PHANQUYEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHANQUYEN" Member="PHANQUYENs">
+    <Type Name="PHANQUYEN">
+      <Column Name="maQuyen" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenQuyen" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="moTa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="PHANQUYEN_NGUOIDUNG" Member="NGUOIDUNGs" ThisKey="maQuyen" OtherKey="maQuyen" Type="NGUOIDUNG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHONGBAN" Member="PHONGBANs">
+    <Type Name="PHONGBAN">
+      <Column Name="maPB" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenPB" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="moTa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="nguoiQuanLi" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="soDienThoai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="PHONGBAN_CONGVAN" Member="CONGVANs" ThisKey="maPB" OtherKey="maPB" Type="CONGVAN" />
+    </Type>
+  </Table>
+</Database>
