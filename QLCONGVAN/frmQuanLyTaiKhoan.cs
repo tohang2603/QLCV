@@ -19,6 +19,8 @@ namespace QLCONGVAN
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            frmTrangChu frm = new frmTrangChu();
+            frm.Show();
             this.Close();   
         }
     }

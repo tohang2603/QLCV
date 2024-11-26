@@ -16,5 +16,16 @@ namespace QLCONGVAN
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            frmTrangChu frm = new frmTrangChu();
+
+            // Hiển thị Form TrangChủ
+            frm.Show();
+
+            // Đóng Form hiện tại
+            this.Close();
+        }
     }
 }
