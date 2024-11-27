@@ -53,12 +53,12 @@ namespace QLCONGVAN
             this.Hide();
         }
 
-        private void pheduyet_Click(object sender, EventArgs e)
-        {
-            frmPheDuyet frm = new frmPheDuyet();    
-            frm.Show(); 
-            this.Hide();    
-        }
+        //private void pheduyet_Click(object sender, EventArgs e)
+        //{
+        //    frmPheDuyet frm = new frmPheDuyet();    
+        //    frm.Show(); 
+        //    this.Hide();    
+        //}
 
         private void coquan_Click(object sender, EventArgs e)
         {

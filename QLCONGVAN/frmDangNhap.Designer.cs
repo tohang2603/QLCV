@@ -48,10 +48,10 @@
             // 
             // DangNhap
             // 
-            this.TbDangNhap.Location = new System.Drawing.Point(378, 129);
-            this.TbDangNhap.Name = "TbDangNhap";
-            this.TbDangNhap.Size = new System.Drawing.Size(227, 20);
-            this.TbDangNhap.TabIndex = 35;
+            this.DangNhap.Location = new System.Drawing.Point(378, 129);
+            this.DangNhap.Name = "TbDangNhap";
+            this.DangNhap.Size = new System.Drawing.Size(227, 20);
+            this.DangNhap.TabIndex = 35;
             // 
             // label15
             // 
@@ -112,8 +112,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(681, 338);
-            this.Controls.Add(this.tBMatKhau);
-            this.Controls.Add(this.TbDangNhap);
+            this.Controls.Add(this.MatKhau);
+            this.Controls.Add(this.DangNhap);
             this.Controls.Add(this.picture1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btnDangnhap);
