@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBMatKhau = new System.Windows.Forms.TextBox();
-            this.TbDangNhap = new System.Windows.Forms.TextBox();
+            this.MatKhau = new System.Windows.Forms.TextBox();
+            this.DangNhap = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnDangnhap = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,31 +38,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tBMatKhau
+            // MatKhau
             // 
-            this.tBMatKhau.Location = new System.Drawing.Point(504, 222);
-            this.tBMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tBMatKhau.Name = "tBMatKhau";
-            this.tBMatKhau.PasswordChar = '*';
-            this.tBMatKhau.Size = new System.Drawing.Size(301, 22);
-            this.tBMatKhau.TabIndex = 36;
+            this.MatKhau.Location = new System.Drawing.Point(411, 183);
+            this.MatKhau.Name = "MatKhau";
+            this.MatKhau.PasswordChar = '*';
+            this.MatKhau.Size = new System.Drawing.Size(227, 20);
+            this.MatKhau.TabIndex = 36;
             // 
-            // TbDangNhap
+            // DangNhap
             // 
-            this.TbDangNhap.Location = new System.Drawing.Point(504, 159);
-            this.TbDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbDangNhap.Location = new System.Drawing.Point(378, 129);
             this.TbDangNhap.Name = "TbDangNhap";
-            this.TbDangNhap.Size = new System.Drawing.Size(301, 22);
+            this.TbDangNhap.Size = new System.Drawing.Size(227, 20);
             this.TbDangNhap.TabIndex = 35;
-            this.TbDangNhap.TextChanged += new System.EventHandler(this.TbDangNhap_TextChanged);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(369, 32);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(277, 26);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(198, 49);
             this.label15.TabIndex = 33;
@@ -71,8 +67,7 @@
             // btnDangnhap
             // 
             this.btnDangnhap.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.btnDangnhap.Location = new System.Drawing.Point(559, 293);
-            this.btnDangnhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangnhap.Location = new System.Drawing.Point(419, 238);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(183, 38);
             this.btnDangnhap.TabIndex = 32;
@@ -84,8 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(332, 220);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(249, 179);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 29);
             this.label2.TabIndex = 31;
@@ -95,8 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(271, 159);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(203, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 29);
             this.label1.TabIndex = 30;
@@ -106,10 +99,9 @@
             // 
             this.picture1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picture1.Image = global::QLCONGVAN.Properties.Resources.đăng_nhập;
-            this.picture1.Location = new System.Drawing.Point(47, 108);
-            this.picture1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picture1.Location = new System.Drawing.Point(35, 88);
             this.picture1.Name = "picture1";
-            this.picture1.Size = new System.Drawing.Size(192, 237);
+            this.picture1.Size = new System.Drawing.Size(145, 193);
             this.picture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture1.TabIndex = 34;
             this.picture1.TabStop = false;
@@ -119,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(908, 416);
+            this.ClientSize = new System.Drawing.Size(681, 338);
             this.Controls.Add(this.tBMatKhau);
             this.Controls.Add(this.TbDangNhap);
             this.Controls.Add(this.picture1);
@@ -138,8 +130,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tBMatKhau;
-        private System.Windows.Forms.TextBox TbDangNhap;
+        private System.Windows.Forms.TextBox MatKhau;
+        private System.Windows.Forms.TextBox DangNhap;
         private System.Windows.Forms.PictureBox picture1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnDangnhap;

@@ -63,6 +63,26 @@ namespace QLCONGVAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap congvandendi {
+            get {
+                object obj = ResourceManager.GetObject("congvandendi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap congvandendi1 {
+            get {
+                object obj = ResourceManager.GetObject("congvandendi1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cơquan2 {
             get {
                 object obj = ResourceManager.GetObject("cơquan2", resourceCulture);
@@ -86,6 +106,16 @@ namespace QLCONGVAN.Properties {
         internal static System.Drawing.Bitmap đăng_nhập {
             get {
                 object obj = ResourceManager.GetObject("đăng nhập", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dangnhap_2 {
+            get {
+                object obj = ResourceManager.GetObject("dangnhap 2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +153,26 @@ namespace QLCONGVAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_trang_chu_1 {
+            get {
+                object obj = ResourceManager.GetObject("hinh nen trang chu 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_trang_chu_3 {
+            get {
+                object obj = ResourceManager.GetObject("hinh nen trang chu 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hinhnen34 {
             get {
                 object obj = ResourceManager.GetObject("hinhnen34", resourceCulture);
@@ -146,6 +196,36 @@ namespace QLCONGVAN.Properties {
         internal static System.Drawing.Bitmap phanquyen {
             get {
                 object obj = ResourceManager.GetObject("phanquyen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phanquyen4 {
+            get {
+                object obj = ResourceManager.GetObject("phanquyen4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phanquyen6 {
+            get {
+                object obj = ResourceManager.GetObject("phanquyen6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phanquyen61 {
+            get {
+                object obj = ResourceManager.GetObject("phanquyen61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +296,16 @@ namespace QLCONGVAN.Properties {
         internal static System.Drawing.Bitmap thongke {
             get {
                 object obj = ResourceManager.GetObject("thongke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thongke1 {
+            get {
+                object obj = ResourceManager.GetObject("thongke1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

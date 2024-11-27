@@ -16,27 +16,31 @@ namespace QLCONGVAN
         {
             InitializeComponent();
         }
+        private bool KiemTraDangNhap(string username, string password)
+        {
+            using (QLCVDataContext db = new QLCVDataContext())
+            {
+                var user = db.DANGNHAPs
+                             .FirstOrDefault(u => u.tenDangNhap == username && u.matKhau == password);
+                return user != null;
+            }
+        }
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            // Kiểm tra thông tin đăng nhập
-            string username = TbDangNhap.Text;
-            string password = tBMatKhau.Text;
+            string username = DangNhap.Text.Trim();
+            string password = MatKhau.Text.Trim();
 
-            Console.WriteLine("Username: " + username);
-            Console.WriteLine("Password: " + password);
-
-            if (username == "admin" && password == "congvan") // Đây là ví dụ đơn giản
+            if (KiemTraDangNhap(username, password))
             {
-                // Đăng nhập thành công, mở form chính
-                frmTrangChu mainForm = new frmTrangChu();
-                mainForm.Show();  // Mở form chính
-                this.Hide();      // Ẩn form đăng nhập
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmTrangChu frm = new frmTrangChu();
+                frm.Show();
+                this.Hide();
             }
             else
             {
-                // Thông báo lỗi nếu thông tin đăng nhập sai
-                MessageBox.Show("Đăng nhập thất bại! Vui lòng kiểm tra lại.");
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

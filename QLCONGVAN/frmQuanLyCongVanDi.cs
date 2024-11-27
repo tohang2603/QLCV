@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Linq;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -154,32 +155,39 @@ namespace QLCONGVAN
             try
             {
                 // Lấy mã công văn từ giao diện
-                string maCongVan = maCV.Text;
+                string maCongVan = maCV.Text.Trim();
+
+                if (string.IsNullOrEmpty(maCongVan))
+                {
+                    MessageBox.Show("Nhập mã công văn cần cập nhật.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 // Tìm công văn trong cơ sở dữ liệu
                 var congvan = db.CONGVANs.FirstOrDefault(cv => cv.maCV == maCongVan);
+
                 if (congvan == null)
                 {
-                    MessageBox.Show("Không tìm thấy công văn cần sửa. Vui lòng kiểm tra lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không tìm thấy công văn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 // Cập nhật giá trị từ giao diện vào đối tượng
-                congvan.maCQ = maCQ.Text;
-                congvan.maPB = maPB.Text;
-                congvan.maND = maND.Text;
-                congvan.maLoaiCV = maLoaiCV.Text;
-                congvan.soCongVan = soCV.Text;
-                congvan.tieuDe = tieudecv.Text;
-                congvan.trichNoiDung = trichnd.Text;
+                congvan.maCQ = maCQ.Text.Trim();
+                congvan.maPB = maPB.Text.Trim();
+                congvan.maND = maND.Text.Trim();
+                congvan.maLoaiCV = maLoaiCV.Text.Trim();
+                congvan.soCongVan = soCV.Text.Trim();
+                congvan.tieuDe = tieudecv.Text.Trim();
+                congvan.trichNoiDung = trichnd.Text.Trim();
                 congvan.ngayTao = ngaytao.Value;
-                congvan.ngayCapNhat = ngaycapnhat.Value;
-                congvan.trangThai = trangthai.Text;
-                congvan.nguoiTao = nguoitao.Text;
-                congvan.nguoiXuLy = nguoixuli.Text;
-                congvan.nguoiPheDuyet = nguoipd.Text;
-                congvan.mucDoKhanCap = mucdokc.Text;
-                congvan.noiNhan = noinhan.Text;
+                congvan.ngayCapNhat = DateTime.Now; // Tự động cập nhật thời gian hiện tại
+                congvan.trangThai = trangthai.Text.Trim();
+                congvan.nguoiTao = nguoitao.Text.Trim();
+                congvan.nguoiXuLy = nguoixuli.Text.Trim();
+                congvan.nguoiPheDuyet = nguoipd.Text.Trim();
+                congvan.mucDoKhanCap = mucdokc.Text.Trim();
+                congvan.noiNhan = noinhan.Text.Trim();
 
                 // Lưu thay đổi vào cơ sở dữ liệu
                 db.SubmitChanges();
@@ -193,7 +201,7 @@ namespace QLCONGVAN
             catch (Exception ex)
             {
                 // Xử lý lỗi và thông báo
-                MessageBox.Show("Đã xảy ra lỗi khi sửa công văn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã xảy ra lỗi khi cập nhật công văn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

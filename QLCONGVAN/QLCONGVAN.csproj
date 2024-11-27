@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKi.Designer.cs">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,12 +88,6 @@
     </Compile>
     <Compile Include="frmPhanQuyen.Designer.cs">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPheDuyet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPheDuyet.Designer.cs">
-      <DependentUpon>frmPheDuyet.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyCongVanDen.cs">
       <SubType>Form</SubType>
@@ -132,6 +132,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCV.dbml</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDangKi.resx">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhanQuyen.resx">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPheDuyet.resx">
-      <DependentUpon>frmPheDuyet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyCongVanDen.resx">
       <DependentUpon>frmQuanLyCongVanDen.cs</DependentUpon>
@@ -250,6 +250,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\hinhnen34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\dangnhap 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\hinh nen trang chu 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\hinh nen trang chu 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\phanquyen4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\phanquyen6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\congvandendi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\thongke1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
