@@ -16,8 +16,7 @@ namespace QLCONGVAN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTrangChu());
-            // to hang
+            Application.Run(new frmDangNhap());
         }
     }
 }

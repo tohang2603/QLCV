@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCONGVAN
 {
-    public partial class frmPheDuyet : Form
+    public partial class frmDangKi : Form
     {
-        public frmPheDuyet()
+        public frmDangKi()
         {
             InitializeComponent();
         }

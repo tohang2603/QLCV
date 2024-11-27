@@ -118,11 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="quanlycongvan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>quanlycongvan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phanquyen4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>phanquyen4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinh nen qlcv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>hinh nen qlcv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phanquyen61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>phanquyen6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinh nen 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hinh nen 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thongke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>thongke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinhnen34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hinhnen34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pheduyet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>pheduyet1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="congvandendi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>congvandendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thongbao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>thongbao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="quanlycongvan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>quanlycongvan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,17 +151,20 @@
   <data name="CV_Den" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>CV_Den.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="đăng nhập" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>đăng nhập.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="congvandendi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>congvandendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="phanquyen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>phanquyen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="thongke" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>thongke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="đăng nhập" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>đăng nhập.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="thongbao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>thongbao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hinh nen trang chu 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hinh nen trang chu 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinh nen trang chu 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hinh nen trang chu 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="phongban" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>phongban.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,19 +172,25 @@
   <data name="nguoidung" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>nguoidung.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quanlycongvan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>quanlycongvan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dangnhap 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dangnhap 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cơquan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>cơquan2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinh nen 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>hinh nen 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hinh nen qlcv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hinh nen qlcv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hinh nen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>hinh nen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pheduyet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>pheduyet1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phanquyen6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>phanquyen6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinhnen34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>hinhnen34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="thongke1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>thongke1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
