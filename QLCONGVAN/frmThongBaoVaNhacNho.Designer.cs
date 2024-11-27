@@ -46,7 +46,7 @@
             // picture9
             // 
             this.picture9.Location = new System.Drawing.Point(56, 80);
-            this.picture9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picture9.Margin = new System.Windows.Forms.Padding(4);
             this.picture9.Name = "picture9";
             this.picture9.Size = new System.Drawing.Size(184, 214);
             this.picture9.TabIndex = 51;
@@ -56,7 +56,7 @@
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(780, 314);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(100, 46);
             this.btnThoat.TabIndex = 42;
@@ -69,7 +69,7 @@
             this.cBemail.AutoSize = true;
             this.cBemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBemail.Location = new System.Drawing.Point(309, 314);
-            this.cBemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cBemail.Margin = new System.Windows.Forms.Padding(4);
             this.cBemail.Name = "cBemail";
             this.cBemail.Size = new System.Drawing.Size(185, 22);
             this.cBemail.TabIndex = 50;
@@ -80,7 +80,7 @@
             // 
             this.btnGui.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGui.Location = new System.Drawing.Point(579, 314);
-            this.btnGui.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGui.Margin = new System.Windows.Forms.Padding(4);
             this.btnGui.Name = "btnGui";
             this.btnGui.Size = new System.Drawing.Size(100, 46);
             this.btnGui.TabIndex = 41;
@@ -91,7 +91,7 @@
             // 
             this.loadNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.loadNhanVien.Location = new System.Drawing.Point(43, 400);
-            this.loadNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loadNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.loadNhanVien.Name = "loadNhanVien";
             this.loadNhanVien.RowHeadersWidth = 51;
             this.loadNhanVien.Size = new System.Drawing.Size(955, 249);
@@ -112,7 +112,7 @@
             // rTBThongBao
             // 
             this.rTBThongBao.Location = new System.Drawing.Point(309, 208);
-            this.rTBThongBao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rTBThongBao.Margin = new System.Windows.Forms.Padding(4);
             this.rTBThongBao.Name = "rTBThongBao";
             this.rTBThongBao.Size = new System.Drawing.Size(664, 85);
             this.rTBThongBao.TabIndex = 47;
@@ -133,7 +133,7 @@
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Location = new System.Drawing.Point(875, 105);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(100, 42);
             this.btnTimKiem.TabIndex = 45;
@@ -143,10 +143,11 @@
             // tBTimKiem
             // 
             this.tBTimKiem.Location = new System.Drawing.Point(309, 114);
-            this.tBTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tBTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.tBTimKiem.Name = "tBTimKiem";
             this.tBTimKiem.Size = new System.Drawing.Size(509, 22);
             this.tBTimKiem.TabIndex = 44;
+            this.tBTimKiem.TextChanged += new System.EventHandler(this.tBTimKiem_TextChanged);
             // 
             // label16
             // 
@@ -175,7 +176,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.tBTimKiem);
             this.Controls.Add(this.label16);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThongBaoVaNhacNho";
             this.Text = "frmThongBaoVaNhacNho";
             ((System.ComponentModel.ISupportInitialize)(this.picture9)).EndInit();

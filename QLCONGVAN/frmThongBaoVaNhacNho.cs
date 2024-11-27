@@ -27,5 +27,10 @@ namespace QLCONGVAN
             // Đóng Form hiện tại
             this.Close();
         }
+
+        private void tBTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

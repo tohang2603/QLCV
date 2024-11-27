@@ -23,6 +23,9 @@ namespace QLCONGVAN
             string username = TbDangNhap.Text;
             string password = tBMatKhau.Text;
 
+            Console.WriteLine("Username: " + username);
+            Console.WriteLine("Password: " + password);
+
             if (username == "admin" && password == "congvan") // Đây là ví dụ đơn giản
             {
                 // Đăng nhập thành công, mở form chính
@@ -35,6 +38,11 @@ namespace QLCONGVAN
                 // Thông báo lỗi nếu thông tin đăng nhập sai
                 MessageBox.Show("Đăng nhập thất bại! Vui lòng kiểm tra lại.");
             }
+        }
+
+        private void TbDangNhap_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

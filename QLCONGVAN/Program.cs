@@ -8,15 +8,16 @@ namespace QLCONGVAN
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Check kiểm tra user đã đăng nhập hay chưa?
+            // Đã đăng nhập rồi
             Application.Run(new frmTrangChu());
+            // Chưa đăng nhập
+            Application.Run(new frmDangNhap());
         }
     }
 }
